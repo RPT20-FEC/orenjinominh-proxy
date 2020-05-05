@@ -1,17 +1,28 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
+  "name": "orenjinominh-proxy",
+  "version": "0.1.0",
+  "description": "FEC Proxy Server",
+  "author": "Minh Ngo",
   "license": "",
   "engines": {
-    "node": ">=6.13.0"
+    "node": ">=12.16.2"
   },
   "scripts": {
+    "build": "webpack",
+    "start": "nodemon ./server/start.js",
+    "dev:react": "webpack -d --watch"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9",
+    "nodemon": "^2.0.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "webpack": "^4.43.0"
   }
 }
